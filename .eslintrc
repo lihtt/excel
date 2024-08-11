@@ -1,0 +1,30 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": [
+        "@babel/preset-env"
+      ]
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "semi": "off",
+    "comma-dangle": "off",
+    "require-jsdoc": "off",
+    "operator-linebreak": "off",
+    "no-tabs": "error",          // Запрет использования табуляций
+    "indent": ["error", 2],      // Использование двух пробелов для отступов
+    "eol-last": ["error", "always"]    // Обязательно наличие новой строки в конце файла
+  },
+  "extends": ["eslint:recommended", "google"]
+}
